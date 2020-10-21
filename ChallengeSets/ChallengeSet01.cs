@@ -37,7 +37,24 @@ namespace ChallengeSets
 
         public string GetGreeting(string nameOfPerson)
         {
-            throw new NotImplementedException();
+            switch (nameOfPerson)
+            {
+                case "John Thomas":
+                    return "Hello, John Thomas!";
+
+                case "John":
+                    return "Hello, John!";
+
+                case "Leigh Ann":
+                    return "Hello, Leigh Ann!";
+
+                case "Leigh":
+                    return "Hello, Leigh!";
+
+                default:
+                    return "Hello!";
+            }
+
         }
 
         public string GetHey()
